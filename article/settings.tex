@@ -1,0 +1,51 @@
+% LAYOUT
+\usepackage{geometry}
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% TYPOGRAPHY
+\usepackage{fontspec} 
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont [BoldFont={Gentium Basic Bold}, ItalicFont={Gentium Basic Italic}]{Gentium Basic}
+%\setmonofont[Scale=0.8]{Monaco} 
+% ---- CUSTOM AMPERSAND
+\newcommand{\amper}{{\fontspec[Scale=.95]{Gentium Basic Italic}\selectfont\itshape\&}}
+% ---- MARGIN YEARS
+\newcommand{\years}[1]{\marginpar{\footnotesize #1}}
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\rmfamily\mdseries\upshape\Large}
+\subsectionfont{\rmfamily\bfseries\upshape\normalsize} 
+\subsubsectionfont{\rmfamily\mdseries\upshape\normalsize} 
+
+% == Metadata =============================================
+\def\ptitle{Titre}
+\def\pauthor{Auteur}
+\def\keywords{lean,agile,software development}
+\def\subject{Research Report}
+\title{\ptitle}
+\author{\pauthor}
+\date{\today}
+
+%-- Hyperref -------------------------------------------------------(fold)
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,          % show bookmarks bar?
+    unicode=true,            % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,         % show Acrobat’s toolbar?
+    pdfmenubar=true,         % show Acrobat’s menu?
+    pdffitwindow=false,      % window fit to page when opened
+    pdfstartview={FitH},     % fits the width of the page to the window
+    pdftitle={\ptitle},      % title
+    pdfauthor={\pauthor},    % author
+    pdfcreator={XelaTeX},    % creator of the document
+    pdfproducer={\pauthor},  % producer of the document
+    pdfnewwindow=false,      % links in new window
+    colorlinks=true,         % false: boxed links; true: colored links
+    linkcolor=BrickRed,      % color of internal links
+    citecolor=OliveGreen,    % color of links to bibliography
+    filecolor=magenta,       % color of file links
+    urlcolor=BlueViolet      % color of external links
+}

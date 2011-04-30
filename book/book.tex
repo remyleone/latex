@@ -1,0 +1,45 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[letterpaper,12pt,oneside]{article}  % For Screen
+%\documentclass[a4paper,11pt,twoside]{article}     % For Print
+
+% == Packages =============================================
+\usepackage[parfill]{parskip}            % Begin paragraphs with an empty line rather than an indent
+\usepackage{fancyhdr}                    % Running Headers and footers
+\usepackage{graphicx}                    % Images loaded externally
+\usepackage[usenames,dvipsnames]{xcolor} % Color setup
+\usepackage{hyperref}                    % Making links in PDF
+
+% == Package Settings ========================================
+%\settextfont[Scale=1]{Gentium}
+%\setlatintextfont[Scale=1]{Helvetica}
+%\setdigitfont[Scale=1]{Gentium}
+%\defpersianfont\Nastaliq[Scale=1]{IranNastaliq}
+%\deflatinfont\Myriad[Scale=1]{Myriad Pro}
+
+% -------------------------------------------------------------------(end)
+%-- Fancy Header ---------------------------------------------------(fold)
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{}                              % delete current header and footer
+\fancyhead[LE,RO]{\bfseries\thepage}
+\fancyhead[LO]{\bfseries\rightmark}
+\fancyhead[RE]{\bfseries\leftmark}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\headheight}{0.5pt}        % space for the rule
+\fancypagestyle{plain}{
+  \fancyhead{}                          % get rid of headers on plain pages
+  \renewcommand{\headrulewidth}{0pt}    % and the line
+}
+% -------------------------------------------------------------------(end)
+
+\begin{document}
+\maketitle
+% == Document ============================================
+\section{Bonjour}
+
+Bonjour
+
+\end{document}

@@ -1,0 +1,80 @@
+\documentclass[a4paper,10pt]{report}
+
+\usepackage{lipsum} 
+\usepackage{stagestyle}
+\usepackage{multicols}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage[french]{babel}
+
+
+% definitions de la page de garde
+
+\def\titrestage{\'Etude et conception d'un syst\`eme d'exploitation S\'ecurise UNIX *BSD}
+\def\eleve{Thomas BRETHOM\'E}
+\def\maitrestage{M. BAYLE Philippe}
+\def\maitrestagefonction{Responsable Technique de projet}
+\def\debutstage{01/06/2010}
+\def\finstage{01/09/2010}
+\def\boite{CS - Communication \& Syst\`emes -- Division S\'ecurit\'e}
+\def\logoboite{img/logo_cs}
+
+% debut du document
+\begin{document}
+\IIETitle
+
+
+%background template
+\AddToShipoutPicture{\includegraphics{img/background150}}
+\tableofcontents
+
+\chapter{Introduction}
+\include{intro.tex}
+
+
+\chapter{S\'ecurisation d'un syst\`eme FreeBSD}
+\section{G\'en\'eralit\'es sur les syst\`emes s\'ecuris\'es}
+\begin{multicols}{2}
+\subsection{Probl\'ematiques courantes des syst\`emes s\'ecuris\'es}
+\lipsum
+\subsection{Cibles de s\'ecurit\'e}
+\lipsum
+\end{multicols}
+
+\pagebreak
+
+\section{S\'eparation des services}
+\begin{multicols}{2}
+
+\subsection{Choix technologiques}
+\lipsum
+\subsection{Principes de fonctionnements des Jails BSD}
+\lipsum
+\subsection{Acc\`es aux p\'eriph\'eriques depuis\\ l'environnement virtualis\'e}
+\subsection{Contraintes techniques sp\'ecifiques \`a certains services}
+\subsubsection{Xorg/X11}
+\lipsum
+\subsubsection{Terminaux virtuels}
+\subsubsection{NTP - Network Time Protocol}
+\subsubsection{Services r\'eseaux de type VPN}
+\subsection{D\'eploiement et maintenance des diff\'erents environnements}
+
+\end{multicols}
+\pagebreak
+\section{Durcissement du syst\`eme}
+\begin{multicols}{2}
+\subsection{Chiffrement des donn\'ees}
+\lipsum
+\subsection{Mots de passes}
+\subsection{Syst\`eme de fichiers}
+\subsection{Acc\`es au r\'eseau}
+\subsubsection{P\'eriph\'eriques r\'eseaux, sockets}
+\subsubsection{Firewall}
+\lipsum
+\end{multicols}
+\pagebreak
+\section{Contr\^ole d'acc\`es avanc\'e}
+\pagebreak
+\chapter{Conclusions}
+
+\end{document}
