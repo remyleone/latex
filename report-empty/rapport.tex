@@ -1,0 +1,66 @@
+\documentclass[a4paper,french,12pt]{memoir}
+
+\usepackage{xltxtra}
+\usepackage{xunicode}
+%\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{listingsutf8}
+\usepackage{numprint}
+\usepackage{geometry}
+%\usepackage{gmeometric}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+
+\setdefaultlanguage{french}
+\setotherlanguage{english}
+
+\setromanfont[Mapping=tex-text]{Gentium Basic}
+
+\newcommand{\HRule}{\noident\rule{\linewidth}{0.6mm}}
+
+\newcommand{\ieme}{\textsuperscript{e}}
+\newcommand{\ier}{\textsuperscript{er}}
+\newcommand{\iere}{\textsuperscript{e}}
+
+\renewcommand{\textsc}{\uppercase}
+\newcommand{\name}{\textsc}
+\newcommand{\engl}[1]{\selectlanguage{english}\textit{#1}\selectlanguage{french}}
+\newcommand{\newterm}{\textit}
+\newcommand{\soft}{\textit}
+
+%\renewcommand{\glossaryname}{Glossaire}
+%\renewcommand*{\begintheglossaryhook}{\begin{description}}
+%\renewcommand*{\glossitem}[4]{\item[#1] #2 #3 #4}
+%\renewcommand*{\atendtheglossaryhook}{\end{description}}
+%\makeglossary
+%\input{tex/00-glossary.tex}
+
+\title{Glandouille sur IRC}
+\author{Truc \textsc{Machin}}
+
+\begin{document}
+
+%\geometry{hmargin=1.2in,vmargin=1.2in}
+\input{tex/00-titlepage.tex}
+
+~
+\pagebreak
+
+\tableofcontents
+\clearpage
+
+%\onehalfspacing
+
+\input{tex/00-intro.tex}
+
+\input{tex/00-thanks.tex}
+
+
+\input{tex/99-conclusion.tex}
+
+\appendix
+
+\input{tex/a-example.tex}
+
+\end{document}
