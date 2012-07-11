@@ -2,5 +2,5 @@
 
 for dir in `find . -not -iwholename '*.git*' -type d`
 do
-  (cd $dir && make)
+  (cd $dir && echo "=>" $dir && make)
 done
