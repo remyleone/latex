@@ -1,0 +1,157 @@
+\documentclass[letterpaper,final]{moderncv}
+\usepackage{hyperref}
+\usepackage{color}
+
+\usepackage{fontspec}
+
+% moderncv themes
+\moderncvtheme[blue]{casual}                % idem
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{2cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name pl
+\AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+
+% HYPERLINK SETUP
+
+\hypersetup{
+  bookmarks=true,         % show bookmarks bar?
+  pdftoolbar=true,        % show Acrobat’s toolbar?
+  pdfmenubar=true,        % show Acrobat’s menu?
+  pdffitwindow=false,     % window fit to page when opened
+  pdftitle={Rémy Léone | Resume},    % title
+  pdfauthor={Rémy Léone},     % author
+  pdfsubject={Rémy Léone | Resume},   % subject of the document
+  pdfcreator={Rémy Léone},   % creator of the document
+  pdfproducer={Rémy Léone}, % producer of the document
+  pdfkeywords={cv} {resume} {Rémy Léone}, % list of keywords
+  pdfnewwindow=true,      % links in new window
+  colorlinks=true,       % false: boxed links; true: colored links
+  linkcolor=red,          % color of internal links
+  citecolor=green,        % color of links to bibliography
+  filecolor=magenta,      % color of file links
+  urlcolor=blue           % color of external links
+}
+
+% CHARACTER ENCODING
+
+\defaultfontfeatures{Mapping=tex-text}
+
+% FONTS
+
+\setromanfont [Ligatures={Common},Numbers={OldStyle}]{Gentium Basic}
+\setmonofont[Scale=0.8]{Inconsolata}
+\setsansfont[Scale=0.9]{Droid Sans}
+
+% personal data
+\firstname{Rémy}
+\familyname{Leone}
+\title{Rémy Léone's resume | PhD thesis in computer-science from September 2012}
+\address{Appartement B008 - 61 Boulevard de l'Yerres}{91000 Evry}
+\mobile{06 67 56 40 22}
+%\homepage{sieben.fr}
+\phone{01 60 78 87 07}
+\email{remy.leone@etu.upmc.fr}
+%\photo[64pt]{picture} % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+\extrainfo{22 ans}
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Education}
+
+\cventry{Sept 2011 to present}{\href{upmc.fr}{UPMC}}
+{Université Pierre et Marie Curie}{Paris}{}
+{Networks with an emphasis on security, Quality of Service, Carrier-Grade networks.
+  \newline
+\textit{Electives:} Graphs, Distributed Resilience to Attacks, Advanced Security.}
+
+\cventry{Sept 2009 to present}{\href{ensiie.fr}{ENSIIE}}
+{Ecole Nationale Supérieure d'Informatique pour l'Industrie et l'Entreprise}{Evry}{}
+{Design techniques, modeling, programming, combined with applied mathematics, business management, economics,
+  project management, ensuring good versatility.
+  \newline
+  \textit{Electives:} Operating Systems, Local Area Networks Administration, Security,
+Concurrent Programming, Networks Quality of Service.}
+
+\section{Professional Experience}
+
+\cventry{April 2012 to September 2012}{Master's internship}
+{
+  \href{www.thalesgroup.com}{Thales Communications \& Security}
+}
+{Thales, Colombes}
+{}{
+  \begin{itemize}
+    \item State of the art of the IETF draft related to Wireless Sensors Networks (CORE \& ROLL).
+    \item Building up interface between \href{www.contiki-os.org}{Contiki} and \href{zeromq.org}{ZeroMQ}.
+  \end{itemize}
+  \textit{Technical environment:} Java, \href{www.contiki-os.org}{Contiki},
+  Cooja, \href{https://people.inf.ethz.ch/mkovatsc/californium.php}{Californium},
+  \href{zeromq.org}{ZeroMQ}
+}
+
+\cventry{June 2011 to September 2011}{Software developer}
+{\href{www.paris-montagne.org}{Paris-Montagne}}
+{ENS Ulm, Paris}{}{
+  \begin{itemize}
+    \item Programmed a geolocation tool in order to provide statistical information
+      about geographic repartition of students.
+    \item Used free software and a free geographic licence in order
+      to respect privacy of the users (Python, Django, PostGIS, Leaflet, OpenStreetMap).
+  \end{itemize}
+  \textit{Technical environment:} Django, Python, GNU/Linux Debian, PostgreSQL,
+PostGis, HTML, CSS, Javascript, Leaflet, OpenStreetMap, git, jQuery, nginx.}
+
+\cventry{June 2010 to September 2010}{Scientific code refactoring}
+{\href{http://www-dam.cea.fr/}{CEA DAM}}
+{Bruyères-le-Châtel}{}{
+  Refactored of a Fortran nuclear physics application from a Sun operating system to a Red Hat Entreprise Linux.
+  \newline
+\textit{Technical environment:} gfortran, Sun OS, Red Hat Entreprise Linux, Shell.}
+
+\section{Computer Skills \& Languages}
+
+\cvcomputer{Databases:}{MySQL, PostgreSQL, PostGIS}
+{OS:}{Windows (XP, Vista, 7), GNU/Linux, MacOSX}
+\cvcomputer{Open Formats:}{HTML, CSS, YAML, JSON, XML, \LaTeX, Xe\LaTeX}
+{Coding tools:}{Eclipse, vim, git, Subversion}
+\cvcomputer{Languages:}{Python, Javascript, Shell, C, C++, Java, Ocaml, Assembly, Fortran}
+{Frameworks:}{Django, geoDjango, jQuery}
+
+\cvlanguage{French}{Native Speaker}{}
+\cvlanguage{English}{TOEIC 855/990}{}
+\cvlanguage{Spanish}{Working knowledge}{}
+
+\section{Associative Experience}
+
+\cventry{Every summer since 2006}{Volunteer position}
+{\href{http://www.paris-montagne.org/}{Paris-Montagne}}
+{\href{http://www.ens.fr/}{ENS Ulm - Paris}}{}
+{The purpose of this association is to show how the world
+  of scientific research works. Our target audience predominently
+  consists of high school students to whom we offer educational activities.
+  I was running a stand during a scientific festival
+giving pratical information on high technology at \href{http://www.ens.fr/}{ENS Ulm}.}
+
+\cventry{2009}{Scientific Presenter}
+{\href{http://www.jardin-experimental.com/}{Jardin Experimental}}
+{\href{http://www.cite-sciences.fr/fr/cite-des-sciences/}{Cité des Sciences et de l’Industrie - Paris}}{}
+{I was running a stand about the new technologies in la Cité des Sciences et
+  de l’Industrie. The Cité des Sciences et de l’Industrie is the biggest science
+  museum in Europe. Located in Parc de la Villette in Paris, France, it is at
+  the heart of the Cultural Center of Science, Technology and Industry (CCSTI), a
+center promoting science and science culture.}
+
+\cventry{Summer 2007}{International research internship}{Summer School of Science}{Višnjan - Croatia}{}
+{Scientific research in English, dealing with the computational chemistry
+of a Cubane molecule. This experience introduced me to foreign
+scientists and helped me finetune my English by giving presentations.}
+
+\end{document}
