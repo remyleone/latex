@@ -1,5 +1,5 @@
 install:
-  - sudo apt-get install texlive-xetex
+  - sudo apt-get install texlive-xetex fonts-sil-gentium
 
 script:
   - source ./test.sh
