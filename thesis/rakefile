@@ -1,0 +1,17 @@
+task :clean do
+    sh 'rm -fr *.toc *.mtc *.dvi *.out *.lof *.lot *.aux *.idx *.ilg *.ind'
+    sh 'rm -fr *.log *.bbl *.brf *.bmt *.blg'
+    sh 'rm -fr *.mtc*'
+end
+
+task :mrproper => :clean do
+    sh 'rm -fr main.ps main.pdf'
+end
+
+
+task :build do
+    sh 'pdflatex main.tex'
+    sh 'bibtex main.tex'
+    sh 'pdlatex main.tex'
+    sh 'pdflatex main.tex'
+end

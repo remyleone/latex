@@ -1,0 +1,96 @@
+\documentclass[sommairechap,stylejchiquet]{these_gi}
+ 
+\begin{document}
+ 
+% ==================================================================
+% OPTIONS D'AFFICHAGE
+% non-définitif (soumis aux rapporteurs) ou  définitif
+\definitiftrue
+% \definitiffalse
+ 
+% ==================================================================
+% RENSEIGNEMENTS SUR LA THÈSE
+ 
+\titleFR{Le titre en français}
+\titleEN{Le titre en anglais}
+\abstractFR{Le résumé en français ($\approx$ 1000 caractères)}
+\abstractEN{Le résumé en anglais ($\approx$ 1000 caractères)}
+\keywordsFR{Les mots-clés en français}
+\keywordsEN{Les mots-clés en anglais}
+ 
+\author{nom de l'auteur}
+\address{adresse email}
+\universite{nom de l'université}
+\laboratoire{nom du laboratoire}
+\specialite{spécialité de la thèse}
+\datesoutenance{la date de soutenance}
+\datesoumission{la date de soumission aux rapporteurs}
+\jury{\begin{tabular}{llll}
+    M\up{me} & \textsc{Lesley Truc} & University machin & (Rapporteur) \\
+    M. & \textsc{Robert Mitchum} & Laboratoire bidule & (Rapporteur) \\
+    M. & \textsc{John Robert} & UTC & (Directeur) \\
+       & etc. &  \\
+  \end{tabular}    
+}
+ 
+% ==================================================================
+% DÉDICACE
+\dedicate{À qui vous voulez\dots}
+ 
+% ==================================================================
+% DEBUT DE LA PRÉFACE
+\beforepreface
+ 
+% remerciements
+\include{remerc}
+ 
+% table des matières générale
+\tableofcontents
+ 
+% affiche la liste des figures
+\listoffigures
+ 
+% ==================================================================
+\afterpreface
+ 
+% ==================================================================
+% AVANT-PROPOS
+\include{intro}
+\adjustmtc
+ 
+% ==================================================================
+% CONTENU GÉNÉRAL
+\include{chap1}
+\include{chap2}
+ 
+% ==================================================================
+% CONCLUSION
+\include{concl}
+ 
+% ==================================================================
+% ANNEXES
+\appendix
+\include{annexe}
+ 
+% ==================================================================
+% BIBLIOGRAPHIE
+\bibliography{biblio}
+ 
+% ==================================================================
+% NOTATIONS
+\include{nota}
+ 
+% ==================================================================
+% COLOPHON
+\colophon{Ce document a été préparé à l'aide de l'éditeur de texte GNU
+  Emacs et du logiciel de composition typographique \LaTeXe.}
+ 
+% ==================================================================
+% COUVERTURE : RESUME ET MOTS-CLÉS
+\abstractpage
+ 
+\end{document}
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

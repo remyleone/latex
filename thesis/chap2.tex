@@ -1,0 +1,68 @@
+\chapter{Le modèle}
+
+\begin{chapintro}
+  \malettrine{D}{ans} ce chapitre, nous présentons le modèle\dots
+\end{chapintro}
+
+%%% ----------------------------------------
+%%% SECTION 1 --- CONSTRUCTION DU MODÈLE ---
+
+\section{Construction du système dynamique}
+
+Dans cette  section, nous construisons  la classe de Processus d'intérêt.
+La  construction s'opère par  morceaux successifs sur les trajectoires 
+des processus.
+
+Les   trajectoires  du  processus   peuvent  représenter,   selon  les
+applications, l'état d'une  population de particules (en neutronique),
+d'une population  de bactéries  (en biologie), la  concentration d'une
+protéine dans une  solution (en chimie) ou, dans  notre cas, l'état du
+niveau  de dégradation  d'une structure  (la taille  d'une  fissure se
+propageant dans une structure).
+
+Auparavant,  nous avons  besoin d'introduire  quelques  définitions et
+notations  concernant  les  processus   de  Markov  et  les  processus
+markoviens de saut.
+
+\subsection{Rappels sur les processus de Markov}
+
+Nous définissons un processus de Markov de la manière suivante :
+
+\begin{definitionf}\label{def:processus_markov}
+  Soit  $(\Omega,\mathcal{F},\mathbb{P})$  un  espace  probabilisé et  soit  $(X_t,t\in
+  \mathbb{R}_+)$  un  processus aléatoire  à  valeurs  dans  un espace  d'état
+  mesurable   $E$  de   tribu  $\mathcal{E}$.    Notons  $\mathcal{F}_t$   la  tribu
+  d'événements   engendrée    par   $(X_s,0\leq   s    \leq   t)$   et
+  $(\mathcal{F}_t)_{t\in\mathbb{R}_+}$ la filtration associée.
+
+  Le processus  $X_t$ est  un {\em processus  de Markov} si  pour tout
+  $B\in \mathcal{E}$ et pour  tout $s,t \in \mathbb{R}_+$ tels que $0  \leq s < t$,
+  il satisfait
+  \begin{equation*}
+    \mathbb{P}(X_t \in B | \mathcal{F}_s) = \mathbb{P}(X_t \in B | X_s), \qquad p.s.
+  \end{equation*}
+  De plus, $X_t$ est {\em homogène  par rapport au temps} si pour tout
+  $t,s\in \mathbb{R}_+$ et pour tout $x\in E$, alors
+  \begin{equation}
+    \label{eq:c2_def_homogene}
+    \mathbb{P}(X_t\in B | X_0=x) = \mathbb{P}(X_{t+s}\in B | X_{s}=x).
+  \end{equation}
+  Pour  un processus  de Markov  homogène, nous  notons  $P(x,B,t)$ la
+  probabilité \eqref{eq:c2_def_homogene}.  La fonction définie par $P:
+  (x,B,t) \rightarrow P(x,B,t)$ pour $x\in E, B\in\mathcal{E},t\in\mathbb{R}_+$ est
+  appelée \emph{fonction de transition} du processus.
+\end{definitionf}
+La   figure  \ref{fig:c2_markov}   représente  une   trajectoire  d'un
+processus markovien de saut, avec les notations associées.
+
+\figScale{c2_markov}{Trajectoire type d'un processus de saut}
+
+%%% --------------------------
+%%% CONCLUSION DU CHAPITRE ---
+
+\section*{Conclusion du chapitre}
+\addcontentsline{toc}{section}{Conclusion}
+
+Encore une\dots
+
+
