@@ -1,0 +1,5 @@
+install:
+  - sudo apt-get install texlive-xetex
+
+script:
+  - source ./test.sh
