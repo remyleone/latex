@@ -1,3 +1,6 @@
+[![Build Status](https://secure.travis-ci.org/sieben/latex.png)](http://travis-ci.org/sieben/latex)
+
+
 LaTeX / XeTeX templates
 
 /article -> Template classique d'article (XeTeX)
