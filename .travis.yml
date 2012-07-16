@@ -1,5 +1,6 @@
 install:
-  - sudo apt-get install texlive-xetex ttf-sil-gentium texlive-latex-recommended texlive-latex-extra
+  - sudo apt-get install ttf-sil-gentium ttf-sil-gentium-basic
+  - sudo apt-get install texlive-xetex texlive-latex-recommended texlive-latex-extra
 
 script:
   - source ./test.sh
