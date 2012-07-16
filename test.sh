@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for dir in article book cover report-empty resume slide thesis tpnote
+for dir in `find . -not -iwholename '*.git*' -type d`
 do
   (cd $dir && echo "=>" $dir && make)
 done
