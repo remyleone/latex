@@ -1,5 +1,5 @@
 install:
-  - sudo apt-get install texlive-xetex ttf-sil-gentium texlive-latex-recommended
+  - sudo apt-get install texlive-xetex ttf-sil-gentium texlive-latex-recommended texlive-latex-extra
 
 script:
   - source ./test.sh
